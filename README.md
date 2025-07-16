@@ -1,23 +1,38 @@
-Music Streaming App
-A responsive single-page music streaming application built with React and Firebase, featuring user authentication, playlist management, and real-time playback.
+# Music Streaming App
 
-Features
-User sign-up, login, and authentication powered by Firebase Authentication
+A responsive single-page music streaming application built with **React** and **Firebase**, offering user authentication, audio playback, and playlist management in real-time.
 
-Create, save, and manage personalized playlists stored in Firebase Firestore
+## Live Demo
 
-Real-time audio playback with play, pause, skip, and volume controls
+[Click here to try the app](https://music-app-f1690.web.app)
 
-Responsive design with Tailwind CSS for seamless experience on desktop and mobile
+---
 
-Smooth navigation without page reloads (Single-Page Application)
+## Features
 
-Tech Stack
-Frontend: React, Tailwind CSS
+* **User Authentication**
+  Sign up and log in securely using Firebase Authentication.
 
-Backend & Database: Firebase Authentication, Firebase Firestore, Firebase Hosting
+* **Playlist Management**
+  Save and organize music preferences with seamless integration via Firebase Firestore.
 
-Deployment: Firebase Hosting
+* **Real-Time Audio Playback**
+  Enjoy smooth music playback with play, pause, skip, and volume controls.
 
-Demo
-Live app is available at: https://music-app-f1690.web.app
+* **Responsive Design**
+  Built with Tailwind CSS to provide a consistent experience across desktop devices.
+
+* **Single Page Application (SPA)**
+  Smooth navigation without page reloads using React Router.
+
+---
+
+## Tech Stack
+
+| Layer        | Tools / Services                   |
+| ------------ | ---------------------------------- |
+| **Frontend** | React, Tailwind CSS                |
+| **Backend**  | Firebase Authentication, Firestore |
+| **Hosting**  | Firebase Hosting                   |
+
+

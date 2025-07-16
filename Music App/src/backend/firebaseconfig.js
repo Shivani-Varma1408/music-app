@@ -1,22 +1,20 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-
 import { getAuth } from "firebase/auth";
-import { getFirestore} from "firebase/firestore";
-   
-// Your web app's Firebase configuration
+import { getFirestore } from "firebase/firestore";
+
+// Firebase config from .env
 const firebaseConfig = {
-  apiKey: "AIzaSyDsVH3XgXzKyL8R_svEgwLrYgFyeYpzcj4",
-  authDomain: "music-app-f1690.firebaseapp.com",
-  projectId: "music-app-f1690",
-  storageBucket: "music-app-f1690.firebasestorage.app",
-  messagingSenderId: "981698165374",
-  appId: "1:981698165374:web:75e20addbd4eb8c060b62f"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
-  
+
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 export let __AUTH = getAuth(firebaseApp);
-export let __DB =getFirestore(firebaseApp);
+export let __DB = getFirestore(firebaseApp);
 
-export default firebaseApp
+export default firebaseApp;
